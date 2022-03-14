@@ -2,9 +2,11 @@
 
 ## Overview of Election Audit 
 
-### To automate congressional voting tabulations for a Colorado district using Python, with the intent of using such methods on additional political elections. In addition, this project seeks to determine each county’s voter turnout, each county’s voter percentage as it pertains to the total voter count, and which county had the highest turnout. 
+### To automate congressional voting tabulations for a Colorado district using Python, with the intent of using such methods on additional political elections. tHIS SPECIFIC AUDIT SOUGHT this to determine each participating candidate and county’s voter turnout, voter percentage, and winner. 
 
 ## Election-Audit Results
+
+### Counties
 
 * Total Votes Cast
 
@@ -87,7 +89,7 @@ This election audit was also concerned about determining which county had the hi
 	Winning Vote Count: 306, 055
 	Winning Percentage: 82.8%
 
-To automate this task, I first had create ``Largest County Turnout`` as well as initialize my county votes and county winning percentages at zero. 
+To automate this task, I had to create ``Largest County Turnout`` as well as initialize my county votes and county winning percentages at zero. 
 
 	Initialize Largest County Turnout as Open String
 	largest_county_turnout  = “”
@@ -112,10 +114,12 @@ The winner is then printed to the terminal using the following portion of code:
 		f“Largest County Turnout\n”
 		f“\n”
 		f“Winner: {largest_county_turnout}\n”
-		f“Winning Vote Count: {largest_county_votes\n”
-		f“Winning Percentage: {largest_county_percentage\n”
+		f“Winning Vote Count: {largest_county_votes}\n”
+		f“Winning Percentage: {largest_county_percentage}\n”
 		f“--------------------------------\n”
 	print(winning_county_summary)
+	
+### Candidates
 
 * Candidate Vote Counts & Percentages
 
@@ -150,9 +154,9 @@ The procedure for extracting this data was remarkedly similar to the code writte
       	Vote percentage =float(votes) / float(total_votes) * 100
 
     Print Candidate Results to Terminal
-    Candidate results= (
+    candidate_results= (
 	    F“{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n”)
-    Print(candidate_results)
+    print(candidate_results)
 
 * Winning Candidate
 
