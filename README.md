@@ -44,7 +44,7 @@ To ascertain this data, I first needed to create a county list and county votes 
 	Create a County Votes Dictionary
 	county_votes = {}
 
-After creating my list and dictionary, I needed to extract the county names from my csv, check that all the counties that submitting votes in this election were represented in my county list,and start calculating each county’s respective votes. I did this by writing the following if statement: 
+After creating my list and dictionary, I needed to extract the county names from my ``csv``, check that all the counties that submitted votes in this election were represented in my ``counties`` list,and start calculating each county’s respective votes. I did this by writing the following ``if`` statement: 
 
 	Extract County Name
 	County_name = row[1]
@@ -62,7 +62,7 @@ After creating my list and dictionary, I needed to extract the county names from
 	county_votes = [county_name] += 1
 	
 
-Next, I needed to create a for loop, compiling all the county names participating in the election and assigning them their respective vote counts and vote percentages. The script to carry out these operations is listed below: 
+Next, I needed to create a ``for`` loop, compiling all the county names participating in the election and assigning them their respective vote counts and vote percentages. The script to carry out these operations is listed below: 
 
 	Start For Loop by Retrieving County Name From County Dictionary
 	for county_name in county_votes:
@@ -87,18 +87,18 @@ This election audit was also concerned about determining which county had the hi
 	Winning Vote Count: 306, 055
 	Winning Percentage: 82.8%
 
-To automate this task, I first had create Largest County Turnout as an f-string as well as initialize my county votes and county winning percentages at zero. 
+To automate this task, I first had create ``Largest County Turnout`` as an ``f-string`` as well as initialize my county votes and county winning percentages at zero. 
 
 	Initialize Largest County Turnout as Open String
 	largest_county_turnout  = “”
   
-  Initialize County Vote at Zero
+  	Initialize County Vote at Zero
 	largest_county_vote = 0
 
 	Initialize County Winning Percentage at Zero
 	Largest_county_percentage = 0
 
-Next, I needed to write another if statement to compare each county’s voter turnout against winning parameters to determine which one had the highest turnout. 
+Next, I needed to write another ``if`` statement to compare each county’s voter turnout against winning parameters to determine which one had the highest turnout. 
 
 	If (votes > largest_county_vote) and (vote_percentage > largest_county_percentage)
 		largest_county_vote = votes
@@ -119,7 +119,7 @@ The winner is then printed to the terminal using the following portion of code:
 
 * Candidate Vote Counts & Percentages
 
-As it turns out, this congressional election was not particularly close with one candiate receiving nearly threequarters of the vote. 
+As it turns out, this congressional election was not particularly close with one candiate receiving nearly three-quarters of the vote. 
 
 	Charles Casper Stockham: 85, 213 Votes Cast (23.0% of the Vote)
 
@@ -146,8 +146,8 @@ The procedure for extracting this data was remarkedly similar to the code writte
 
     Create a For Loop to Calculate Candidates’ Vote Count & Percentages
     For candidate_name in candidate_votes:
-	    Votes = candidate_votes.get(candidate_name)
-      Vote percentage =float(votes) / float(total_votes) * 100
+	Votes = candidate_votes.get(candidate_name)
+      	Vote percentage =float(votes) / float(total_votes) * 100
 
     Print Candidate Results to Terminal
     Candidate results= (
@@ -158,15 +158,15 @@ The procedure for extracting this data was remarkedly similar to the code writte
 
 The winning candidate in this election was Diana DeGette, who received 272,892 votes or approximately 73.8% of the vote. The Winning candiate was determed by comparing the winning count and winning percentage against the votes and vote_percentage respectively. As a result, the final printed results were achieved using the following script:
 	
-	  Determine Winner
+	Determine Winner
     	if (votes > winning_count) and (vote_percentage > winning_percentage)
-	    winning_count = votes
-      winning_candidate = candidate_name
-      winning_percentage =vote_percentage
+		winning_count = votes
+      		winning_candidate = candidate_name
+      		winning_percentage =vote_percentage
 
 	Print Winner to Terminal
 	winning_candidate_summaery = (
-    f“-------------------------------\n”
+    		f“-------------------------------\n”
 		f“Winner: {winning_candidate}\n”
 		f“Winning Vote Count: {winning_count:,}\n”
 		f“Winning Percentage: {winning_percentage:.1f}%\n”
