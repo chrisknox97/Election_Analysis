@@ -87,7 +87,7 @@ This election audit was also concerned about determining which county had the hi
 	Winning Vote Count: 306, 055
 	Winning Percentage: 82.8%
 
-To automate this task, I first had create ``Largest County Turnout`` as an ``f-string`` as well as initialize my county votes and county winning percentages at zero. 
+To automate this task, I first had create ``Largest County Turnout`` as well as initialize my county votes and county winning percentages at zero. 
 
 	Initialize Largest County Turnout as Open String
 	largest_county_turnout  = “”
