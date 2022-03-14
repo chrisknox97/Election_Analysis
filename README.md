@@ -2,7 +2,7 @@
 
 ## Overview of Election Audit 
 
-### To automate congressional voting tabulations for a Colorado district using Python, with the intent of using such methods on additional political elections. tHIS SPECIFIC AUDIT SOUGHT this to determine each participating candidate and county’s voter turnout, voter percentage, and winner. 
+### To automate congressional voting tabulations for a Colorado district using Python, with the intent of using such methods on additional political elections. This specific audit to determine each participating candidate and county’s voter turnout, voter percentage, as well as the election winner and county with the highest turnout. 
 
 ## Election-Audit Results
 
