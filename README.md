@@ -8,7 +8,7 @@
 
 ### Counties
 
-* Total Votes Cast
+* **Total Votes Cast**
 
 The total number of votes cast in this congressional election was 369,711. To tabulate this data using Python, the script needed to do the following:
 
@@ -26,7 +26,7 @@ The total number of votes cast in this congressional election was 369,711. To ta
 		f“-----------------------------\n”)
 	print(election_results, end=“”
 
-* County Votes & Percentages
+* **County Votes & Percentages**
 
 In this congressional election, the participating counties received the following voter counts and percentages: 
 
@@ -79,7 +79,7 @@ Next, I needed to create a ``for`` loop, compiling all the county names particip
 	county_results = (
 		f“{county_name}: {vote_percentage:.1f}% ({votes:,})\n”)
 
-* Largest County Turnout
+* **Largest County Turnout**
 
 This election audit was also concerned about determining which county had the highest voter turnout. The result of this portion of the audit is listed below: 
 	
@@ -121,7 +121,7 @@ The winner is then printed to the terminal using the following portion of code:
 	
 ### Candidates
 
-* Candidate Vote Counts & Percentages
+* **Candidate Vote Counts & Percentages**
 
 As it turns out, this congressional election was not particularly close with one candiate receiving nearly three-quarters of the vote. 
 
@@ -158,7 +158,7 @@ The procedure for extracting this data was remarkedly similar to the code writte
 	    	f“{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n”)
     print(candidate_results)
 
-* Winning Candidate
+* **Winning Candidate**
 
 The winning candidate in this election was Diana DeGette, who received 272,892 votes or approximately 73.8% of the vote. The winning candiate was determed by comparing the ``winning_count`` and ``winning_percentage`` against the ``votes`` and ``vote_percentage`` respectively. As a result, the final printed results were achieved using the following script:
 	
@@ -181,13 +181,13 @@ The winning candidate in this election was Diana DeGette, who received 272,892 v
 
 ### This script could be used in additional congressional and senatorial campaigns as it can quickly tabulate votes received by candidates and by county with efficiency and accuracy when compared to hand counting. Should the Electoral Commission wish to use this script for future elections, its members can rest assured in its malleability.
 
-* Adding Counties
+* **Adding Counties**
 
 Should this district's counties change due to redistricting measures in a future election cylce, a new county could easily be added to the script by simply amending the county list. 
 
 	counties.append("New County Name")
 
-* Removing Candidates
+* **Removing Candidates**
 
 Similarly, should primary candidates need to be removed from the script for a general election; Python makes to process rather easy. 
 
