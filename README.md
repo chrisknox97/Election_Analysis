@@ -49,10 +49,10 @@ To ascertain this data, I first needed to create a county list and county votes 
 After creating my list and dictionary, I needed to extract the county names from my ``csv``, check that all the counties that submitted votes in this election were represented in my ``counties`` list,and start calculating each county’s respective votes. I did this by writing the following ``if`` statement: 
 
 	Extract County Name
-	County_name = row[1]
+	county_name = row[1]
 	
 	Create an If Statement if County Name Not Found in counties List
-	If county_name not in counties:
+	if county_name not in counties:
 
 	Add County To County List
 	counties.append(county_name) 
@@ -98,11 +98,11 @@ To automate this task, I had to create ``Largest County Turnout`` as well as ini
 	largest_county_vote = 0
 
 	Initialize County Winning Percentage at Zero
-	Largest_county_percentage = 0
+	largest_county_percentage = 0
 
 Next, I needed to write another ``if`` statement to compare each county’s voter turnout against winning parameters to determine which one had the highest turnout. 
 
-	If (votes > largest_county_vote) and (vote_percentage > largest_county_percentage)
+	if (votes > largest_county_vote) and (vote_percentage > largest_county_percentage)
 		largest_county_vote = votes
 		largest_county_turnout = county_name
 		largest_county_percentage = vote percentage
@@ -134,25 +134,24 @@ As it turns out, this congressional election was not particularly close with one
 The procedure for extracting this data was remarkedly similar to the code written to tabulate the county votes. 
 
 	Initialize Candidate Options List and Candidate Votes Dictionary
-	Candidate_options = []
-	Candidate_votes = {}
+	candidate_options = []
+	candidate_votes = {}
 
 	Extract the Candidate Name
 	candidate_name = row[2]
 
 	Add Candidate Name If Not Found in Candidate Options List
 	If candidate_name not in candidate_options: 
-		Candidate_options.append(candidate_name)
+		candidate_options.append(candidate_name)
 
 		Start Counting Votes for Each Candidate
-		Candidate_votes[candidate_name] = 0
-		Candidate_votes[candidate_name] += 1
+		candidate_votes[candidate_name] = 0
+		candidate_votes[candidate_name] += 1
 
     Create a For Loop to Calculate Candidates’ Vote Count & Percentages
     For candidate_name in candidate_votes:
-	
-	Votes = candidate_votes.get(candidate_name)
-      	Vote percentage =float(votes) / float(total_votes) * 100
+	votes = candidate_votes.get(candidate_name)
+      	vote percentage =float(votes) / float(total_votes) * 100
 
     Print Candidate Results to Terminal
     candidate_results= (
