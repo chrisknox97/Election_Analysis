@@ -24,16 +24,16 @@ The total number of votes cast in this congressional election was 369,711. To ta
 		f“-----------------------------\n”)
 	print(election_results, end=“”
 
--County Votes & Percentages
+* County Votes & Percentages
 
 In this congressional election, the participating counties received the following voter counts and percentages: 
 
 
--Jefferson County: 38,855 Votes Cast (10.5% of Total Votes)
+	* Jefferson County: 38,855 Votes Cast (10.5% of Total Votes)
 
--Denver County: 306, 055 Votes Cast (82.8% of Total Votes)
+	* Denver County: 306, 055 Votes Cast (82.8% of Total Votes)
 
--Arapahoe County: 24,801 Votes Cast (6.7% of Total Votes)
+	* Arapahoe County: 24,801 Votes Cast (6.7% of Total Votes)
 
 
 To ascertain this data, I first needed to create a county list and county votes dictionary from which I could derive my data. As such I wrote the following Python script: 
@@ -77,7 +77,7 @@ Next, I needed to create a for loop, compiling all the county names participatin
 	county_results = (
 		f“{county_name}: {vote_percentage:.1f}% ({votes:,})\n”)
 
--Largest County Turnout
+* Largest County Turnout
 
 This election audit was also concerned about determining which county had the highest voter turnout. The result of this portion of the audit is listed below: 
 	
@@ -117,7 +117,7 @@ The winner is then printed to the terminal using the following portion of code:
 		f“--------------------------------\n”
 	print(winning_county_summary)
 
--Candidate Vote Counts & Percentages
+* Candidate Vote Counts & Percentages
 
 As it turns out, this congressional election was not particularly close with one candiate receiving nearly threequarters of the vote. 
 
@@ -154,12 +154,12 @@ The procedure for extracting this data was remarkedly similar to the code writte
 	    F“{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n”)
     Print(candidate_results)
 
--Winning Candidate
+* Winning Candidate
 
 The winning candidate in this election was Diana DeGette, who received 272,892 votes or approximately 73.8% of the vote. The Winning candiate was determed by comparing the winning count and winning percentage against the votes and vote_percentage respectively. As a result, the final printed results were achieved using the following script:
 	
 	  Determine Winner
-    if (votes > winning_count) and (vote_percentage > winning_percentage)
+    	if (votes > winning_count) and (vote_percentage > winning_percentage)
 	    winning_count = votes
       winning_candidate = candidate_name
       winning_percentage =vote_percentage
