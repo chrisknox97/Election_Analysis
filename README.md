@@ -160,7 +160,7 @@ The procedure for extracting this data was remarkedly similar to the code writte
 
 * Winning Candidate
 
-The winning candidate in this election was Diana DeGette, who received 272,892 votes or approximately 73.8% of the vote. The Winning candiate was determed by comparing the winning count and winning percentage against the votes and vote_percentage respectively. As a result, the final printed results were achieved using the following script:
+The winning candidate in this election was Diana DeGette, who received 272,892 votes or approximately 73.8% of the vote. The winning candiate was determed by comparing the ``winning_count`` and ``winning_percentage`` against the ``votes`` and ``vote_percentage`` respectively. As a result, the final printed results were achieved using the following script:
 	
 	Determine Winner
     	if (votes > winning_count) and (vote_percentage > winning_percentage)
