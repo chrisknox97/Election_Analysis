@@ -150,6 +150,7 @@ The procedure for extracting this data was remarkedly similar to the code writte
 
     Create a For Loop to Calculate Candidates’ Vote Count & Percentages
     For candidate_name in candidate_votes:
+	
 	Votes = candidate_votes.get(candidate_name)
       	Vote percentage =float(votes) / float(total_votes) * 100
 
