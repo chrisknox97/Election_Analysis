@@ -141,22 +141,22 @@ The procedure for extracting this data was remarkedly similar to the code writte
 	candidate_name = row[2]
 
 	Add Candidate Name If Not Found in Candidate Options List
-	If candidate_name not in candidate_options: 
+	if candidate_name not in candidate_options: 
 		candidate_options.append(candidate_name)
 
 		Start Counting Votes for Each Candidate
 		candidate_votes[candidate_name] = 0
 		candidate_votes[candidate_name] += 1
 
-    Create a For Loop to Calculate Candidates’ Vote Count & Percentages
-    For candidate_name in candidate_votes:
-	votes = candidate_votes.get(candidate_name)
-      	vote percentage =float(votes) / float(total_votes) * 100
+    	Create a For Loop to Calculate Candidates’ Vote Count & Percentages
+    	for candidate_name in candidate_votes:
+		votes = candidate_votes.get(candidate_name)
+      		vote percentage =float(votes) / float(total_votes) * 100
 
-    Print Candidate Results to Terminal
-    candidate_results= (
-	    F“{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n”)
-    print(candidate_results)
+    	Print Candidate Results to Terminal
+    	candidate_results= (
+	    	f“{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n”)
+    	print(candidate_results)
 
 * Winning Candidate
 
