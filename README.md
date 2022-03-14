@@ -6,7 +6,7 @@
 
 ## Election-Audit Results
 
--Total Votes Cast
+*Total Votes Cast
 
 The total number of votes cast in this congressional election was 369,711. To tabulate this data using Python, the script needed to do the following:
 
