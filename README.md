@@ -29,11 +29,11 @@ The total number of votes cast in this congressional election was 369,711. To ta
 In this congressional election, the participating counties received the following voter counts and percentages: 
 
 
-	* Jefferson County: 38,855 Votes Cast (10.5% of Total Votes)
+	Jefferson County: 38,855 Votes Cast (10.5% of Total Votes)
 
-	* Denver County: 306, 055 Votes Cast (82.8% of Total Votes)
+	Denver County: 306, 055 Votes Cast (82.8% of Total Votes)
 
-	* Arapahoe County: 24,801 Votes Cast (6.7% of Total Votes)
+	Arapahoe County: 24,801 Votes Cast (6.7% of Total Votes)
 
 
 To ascertain this data, I first needed to create a county list and county votes dictionary from which I could derive my data. As such I wrote the following Python script: 
