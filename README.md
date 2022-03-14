@@ -179,7 +179,7 @@ The winning candidate in this election was Diana DeGette, who received 272,892 v
 
 ## Election-Audit Summary
 
-### This script could be used in additional congressional and senatorial campaigns as it can quickly tabulate votes received by candidates and by county with efficiency and accuracy when compared to hand counting. Should the electoral commission wish to use this script for future elections, its members can rest easy, knowing its malleability.
+### This script could be used in additional congressional and senatorial campaigns as it can quickly tabulate votes received by candidates and by county with efficiency and accuracy when compared to hand counting. Should the Electoral Commission wish to use this script for future elections, its members can rest assured in its malleability.
 
 * Adding Counties
 
