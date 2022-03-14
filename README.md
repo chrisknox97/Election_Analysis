@@ -170,7 +170,7 @@ The winning candidate in this election was Diana DeGette, who received 272,892 v
 
 	Print Winner to Terminal
 	winning_candidate_summaery = (
-    		f“-------------------------------\n”
+		f“-------------------------------\n”
 		f“Winner: {winning_candidate}\n”
 		f“Winning Vote Count: {winning_count:,}\n”
 		f“Winning Percentage: {winning_percentage:.1f}%\n”
