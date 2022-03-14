@@ -10,13 +10,13 @@
 
 The total number of votes cast in this congressional election was 369,711. To tabulate this data using Python, the script needed to do the following:
 
-	Initialize a Total Vote Count at Zero
+	* Initialize a Total Vote Count at Zero
 	total_votes = 0
 
-	Add each subsequent vote to the Total Vote Count
+	* Add each subsequent vote to the Total Vote Count
 	total_votes = total_votes +1
 
-	Print Total Votes to Terminal
+	* Print Total Votes to Terminal
 	election_results = (
 		f“\nElection Results\n”
 		f“-----------------------------\n”
